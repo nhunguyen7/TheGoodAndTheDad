@@ -17,7 +17,8 @@ non_dad_df["label"] = 0  # 0 is non-dad jokes
 # Combine the two datasets
 data = pd.concat([dad_df, non_dad_df], ignore_index=True)
 
-print("Dad:", data.head())
+print("Data:")
+print(data.head())
 
 # Split train and test data
 train, test = train_test_split(data, test_size=0.1, random_state=9)
